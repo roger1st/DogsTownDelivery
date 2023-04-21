@@ -45,3 +45,26 @@ const mobileNavbar = new MobileNavbar(
 mobileNavbar.init();
 
 // -----> FIM DO MENU HAMBURGUER<-----
+// Seleciona o elemento da slider
+var slider = document.querySelector('.slider');
+
+// Seleciona todas as imagens dentro da slider
+var sliderImages = slider.querySelectorAll('img');
+
+// Define a variável para controlar a posição atual do slider
+var currentPosition = 0;
+
+// Define a função para mudar a posição do slider
+function changePosition() {
+  // Esconde a imagem atual
+  sliderImages[currentPosition].style.opacity = 0;
+
+  // Incrementa a posição atual ou retorna à posição inicial se já chegou ao final
+  currentPosition = (currentPosition + 1) % sliderImages.length;
+
+  // Mostra a próxima imagem
+  sliderImages[currentPosition].style.opacity = 1;
+}
+
+// Define o intervalo de tempo para mudar a posição do slider
+setInterval(changePosition, 3000);

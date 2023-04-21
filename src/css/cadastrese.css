@@ -1,7 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@600;700&display=swap');
 
+ @font-face {
+    font-family: 'Exo 2',sans-serif;
+    src: url(https://fonts.googleapis.com/css2?family=Exo+2:wght@600;700&display=swap);
+ }
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Exo 2', sans-serif;
     margin: 0;
     padding: 0;
     color: #023047
@@ -59,7 +63,7 @@ body {
 
 
 .formLogin input:focus {
-    border: 1px solid #FF0000;
+    border: 1px solid #FFD600;
 }
 
 .formLogin label {
@@ -76,13 +80,13 @@ body {
 }
 
 .formLogin a:hover {
-    color: #FF0000;
+    color: #FFD600;
     background-color: #fff;
-    border: #FF0000 2px solid;
+    border: #FFD600 2px solid;
 }
 
 .btn {
-    background-color: #FF0000;
+    background-color: #FFD600;
     color: #fff;
     font-size: 14px;
     font-weight: 600;
@@ -95,6 +99,7 @@ body {
 
 .btn:hover {
     transform: scale(1.05);
-    background-color: #671111;
+    background-color: #ffffff;
+    color: #FFD600;
 
 }
